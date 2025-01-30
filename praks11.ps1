@@ -1,6 +1,6 @@
 ﻿Write-Host "Sisestage kaks numbrit:"
 [int]$number1 = Read-Host "Sisestage esimene number"  
-return 0
+
 [int]$number2 = Read-Host "Sisestage teine number" 
 
 Write-Host "Kalkulaator" -ForegroundColor Cyan
@@ -14,7 +14,7 @@ if ( $arvutatav -eq 1) {
 $vastus= [int]$number1 + [int]$number2}
 elseif ( $arvutatav -eq 2) {
 $vastus= [int]$number1 - [int]$number2}
-elseif ( $arvutatav -eq 3) {
+elseif ( $arvutatav -eq 3) {$arvutatav
 $vastus= [int]$number1 * [int]$number2}
 elseif ( $arvutatav -eq 4) {
 $vastus= [int]$number1 / [int]$number2}
